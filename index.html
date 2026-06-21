@@ -1,606 +1,1377 @@
 <!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yulius Puang | Profil & Portofolio Digital Operations</title>
+  <meta name="description" content="Profil dan portofolio Yulius Puang untuk Industrial IT, IT Governance, Service Management, Digital Operations, enterprise applications, monitoring, dan automation.">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #142022;
+      --muted: #607077;
+      --paper: #f6f3ed;
+      --panel: #ffffff;
+      --line: #d9ded8;
+      --coal: #1f2a2e;
+      --green: #1e6b58;
+      --copper: #b46a3c;
+      --blue: #286c95;
+      --yellow: #d8a528;
+      --red: #b84a45;
+      --shadow: 0 18px 45px rgba(31, 42, 46, .12);
+      --radius: 8px;
+    }
 
-        <meta name="description" content="">
-        <meta name="author" content="TemplateMo">
+    * { box-sizing: border-box; }
 
-        <title>Julius Puang |  &reg;ITSM Manager </title>
+    html {
+      scroll-behavior: smooth;
+    }
 
-        <!-- CSS FILES -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.5;
+    }
 
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
+    button {
+      font: inherit;
+    }
 
-        <link href="css/magnific-popup.css" rel="stylesheet">
+    .shell {
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(20, 32, 34, .72), rgba(20, 32, 34, .58)),
+        url("assets/command-center-bg.png") center / cover no-repeat;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+    }
 
-        <link href="css/templatemo-first-portfolio-style.css" rel="stylesheet">
-        
-<!--
+    .topbar {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 18px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
 
-TemplateMo 578 First Portfolio
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
 
-https://templatemo.com/tm-578-first-portfolio
+    .brand-mark {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .94);
+      display: grid;
+      place-items: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .16);
+      flex: 0 0 auto;
+      overflow: hidden;
+    }
 
--->
-    </head>
-    
-    <body>
+    .brand-mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-        <section class="preloader">
-            <div class="spinner">
-                <span class="spinner-rotate"></span>    
+    .brand strong {
+      display: block;
+      font-size: 15px;
+      letter-spacing: 0;
+    }
+
+    .brand span {
+      display: block;
+      font-size: 12px;
+      color: rgba(255, 255, 255, .72);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav a,
+    .nav button,
+    .hero-action {
+      border: 1px solid rgba(255, 255, 255, .24);
+      color: #fff;
+      background: rgba(255, 255, 255, .10);
+      border-radius: var(--radius);
+      min-height: 38px;
+      padding: 8px 12px;
+      cursor: pointer;
+      backdrop-filter: blur(12px);
+    }
+
+    .nav a:hover,
+    .nav button:hover,
+    .hero-action:hover {
+      background: rgba(255, 255, 255, .18);
+    }
+
+    .hero {
+      width: min(1180px, calc(100% - 32px));
+      margin: auto;
+      padding: 72px 0 92px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(320px, .9fr);
+      gap: 44px;
+      align-items: end;
+    }
+
+    .eyebrow {
+      margin: 0 0 18px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: rgba(255, 255, 255, .78);
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 850px;
+      font-size: clamp(42px, 7vw, 82px);
+      line-height: .98;
+      letter-spacing: 0;
+    }
+
+    .hero-copy {
+      max-width: 720px;
+      margin: 24px 0 0;
+      color: rgba(255, 255, 255, .82);
+      font-size: 18px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .hero-action.primary {
+      background: #fff;
+      color: var(--coal);
+      border-color: #fff;
+      font-weight: 800;
+    }
+
+    .hero-panel {
+      border: 1px solid rgba(255, 255, 255, .18);
+      background: rgba(20, 32, 34, .54);
+      backdrop-filter: blur(18px);
+      border-radius: var(--radius);
+      padding: 20px;
+      box-shadow: 0 18px 50px rgba(0, 0, 0, .18);
+    }
+
+    .profile-photo {
+      width: 118px;
+      height: 118px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+      border: 4px solid rgba(255, 255, 255, .92);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, .26);
+      margin-bottom: 18px;
+    }
+
+    .hero-panel h2 {
+      margin: 0 0 14px;
+      font-size: 18px;
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .metric {
+      min-height: 86px;
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .10);
+      border: 1px solid rgba(255, 255, 255, .14);
+      padding: 14px;
+    }
+
+    .metric b {
+      display: block;
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .metric span {
+      display: block;
+      margin-top: 7px;
+      color: rgba(255, 255, 255, .72);
+      font-size: 12px;
+    }
+
+    main {
+      background: var(--paper);
+    }
+
+    section {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 72px 0;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: end;
+      margin-bottom: 26px;
+    }
+
+    .section-head h2 {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 46px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .section-head p {
+      margin: 10px 0 0;
+      max-width: 660px;
+      color: var(--muted);
+    }
+
+    .filterbar {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .filterbar button {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      color: var(--coal);
+      min-height: 38px;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+
+    .filterbar button.is-active {
+      background: var(--coal);
+      color: #fff;
+      border-color: var(--coal);
+    }
+
+    .system-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .system-card {
+      min-height: 390px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .system-visual {
+      min-height: 128px;
+      padding: 16px;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      background:
+        linear-gradient(135deg, rgba(20, 32, 34, .16), rgba(20, 32, 34, .34)),
+        var(--accent);
+    }
+
+    .system-visual.has-image {
+      background:
+        linear-gradient(135deg, rgba(20, 32, 34, .30), rgba(20, 32, 34, .48)),
+        var(--image) center / cover no-repeat;
+    }
+
+    .system-visual b {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    .mini-window {
+      width: 132px;
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .92);
+      padding: 8px;
+      box-shadow: 0 16px 30px rgba(0, 0, 0, .18);
+    }
+
+    .screen-strip {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .screen-strip img {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #f2f2f2;
+    }
+
+    .mini-line {
+      height: 7px;
+      border-radius: 99px;
+      margin: 6px 0;
+      background: color-mix(in srgb, var(--accent), white 62%);
+    }
+
+    .mini-line.short { width: 58%; }
+    .mini-line.mid { width: 76%; }
+
+    .system-body {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .tag-row {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .tag {
+      border-radius: 999px;
+      background: #eef2ef;
+      color: #4f5e64;
+      padding: 4px 8px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .system-body h3 {
+      margin: 0;
+      font-size: 21px;
+      line-height: 1.2;
+    }
+
+    .system-body p {
+      color: var(--muted);
+      margin: 10px 0 0;
+      font-size: 14px;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 14px 0 18px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .feature-list li {
+      display: grid;
+      grid-template-columns: 18px 1fr;
+      gap: 8px;
+      color: #344348;
+      font-size: 14px;
+    }
+
+    .feature-list li::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      margin-top: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .card-footer {
+      margin-top: auto;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .detail-btn {
+      border: 1px solid var(--coal);
+      background: var(--coal);
+      color: #fff;
+      border-radius: var(--radius);
+      min-height: 38px;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-weight: 800;
+    }
+
+    .scope {
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+
+    .band {
+      width: 100%;
+      background: #fff;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .profile-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr);
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    .profile-card,
+    .profile-list {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px;
+    }
+
+    .profile-card h3,
+    .profile-list h3 {
+      margin: 0 0 12px;
+      font-size: 22px;
+    }
+
+    .profile-card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .profile-list ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+
+    .profile-list li {
+      display: grid;
+      grid-template-columns: 18px 1fr;
+      gap: 8px;
+      color: #344348;
+      font-size: 14px;
+    }
+
+    .profile-list li::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-top: 7px;
+      background: var(--green);
+    }
+
+    .approach-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .approach {
+      border-left: 4px solid var(--accent);
+      padding: 4px 0 4px 14px;
+    }
+
+    .approach b {
+      display: block;
+      font-size: 16px;
+    }
+
+    .approach span {
+      display: block;
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .stack span {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 10px 12px;
+      font-weight: 800;
+      color: #2d3d42;
+    }
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+      gap: 16px;
+      align-items: start;
+    }
+
+    .cert-card,
+    .credential-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 20px;
+    }
+
+    .cert-card h3,
+    .credential-card h3 {
+      margin: 0 0 12px;
+      font-size: 20px;
+    }
+
+    .cert-card ul,
+    .credential-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+
+    .cert-card li {
+      display: grid;
+      grid-template-columns: 18px 1fr;
+      gap: 8px;
+      color: #344348;
+      font-size: 14px;
+    }
+
+    .cert-card li::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-top: 7px;
+      background: var(--blue);
+    }
+
+    .credential-item {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 12px;
+      background: #fafafa;
+    }
+
+    .credential-item b {
+      display: block;
+      color: var(--coal);
+      font-size: 14px;
+    }
+
+    .credential-item span {
+      display: inline-block;
+      margin: 6px 0;
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+
+    .verify-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 30px;
+      margin: 8px 0;
+      border-radius: var(--radius);
+      background: var(--coal);
+      color: #fff;
+      padding: 6px 10px;
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+
+    .verify-btn:hover {
+      background: var(--blue);
+    }
+
+    .credential-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .closing {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 24px;
+      align-items: center;
+      background: var(--coal);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 28px;
+    }
+
+    .closing h2 {
+      margin: 0;
+      font-size: clamp(26px, 4vw, 42px);
+      line-height: 1.08;
+    }
+
+    .closing p {
+      color: rgba(255, 255, 255, .72);
+      margin: 12px 0 0;
+    }
+
+    .contact-box {
+      background: rgba(255, 255, 255, .10);
+      border: 1px solid rgba(255, 255, 255, .14);
+      border-radius: var(--radius);
+      padding: 16px;
+    }
+
+    .contact-box span {
+      display: block;
+      color: rgba(255, 255, 255, .68);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      font-weight: 800;
+    }
+
+    .contact-box b {
+      display: block;
+      margin-top: 8px;
+      overflow-wrap: anywhere;
+    }
+
+    dialog {
+      width: min(900px, calc(100% - 24px));
+      border: 0;
+      border-radius: var(--radius);
+      padding: 0;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, .28);
+    }
+
+    dialog::backdrop {
+      background: rgba(20, 32, 34, .62);
+      backdrop-filter: blur(6px);
+    }
+
+    .modal-head {
+      background: var(--coal);
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: flex-start;
+    }
+
+    .modal-head h3 {
+      margin: 0;
+      font-size: 26px;
+    }
+
+    .modal-head p {
+      margin: 8px 0 0;
+      color: rgba(255, 255, 255, .72);
+    }
+
+    .close-btn {
+      width: 38px;
+      height: 38px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255, 255, 255, .22);
+      background: rgba(255, 255, 255, .10);
+      color: #fff;
+      cursor: pointer;
+      font-weight: 900;
+      flex: 0 0 auto;
+    }
+
+    .modal-body {
+      padding: 22px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(260px, .75fr);
+      gap: 20px;
+    }
+
+    .modal-body h4 {
+      margin: 0 0 10px;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--muted);
+    }
+
+    .modal-body ul {
+      margin: 0;
+      padding-left: 18px;
+      color: #314147;
+    }
+
+    .source-note {
+      margin-top: 16px;
+      border-top: 1px solid var(--line);
+      padding-top: 14px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .modal-body li + li {
+      margin-top: 8px;
+    }
+
+    .info-panel {
+      background: #f3f5f2;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 16px;
+    }
+
+    .info-panel dl {
+      margin: 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .info-panel dt {
+      font-size: 12px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      font-weight: 800;
+    }
+
+    .info-panel dd {
+      margin: 3px 0 0;
+      color: var(--coal);
+      font-weight: 800;
+    }
+
+    .is-hidden {
+      display: none;
+    }
+
+    @media (max-width: 980px) {
+      .hero,
+      .closing {
+        grid-template-columns: 1fr;
+      }
+
+      .system-grid,
+      .profile-grid,
+      .cert-grid,
+      .approach-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 720px) {
+      .topbar,
+      .section-head {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav {
+        justify-content: flex-start;
+      }
+
+      .hero {
+        padding: 42px 0 58px;
+      }
+
+      .system-grid,
+      .profile-grid,
+      .cert-grid,
+      .approach-grid,
+      .modal-body {
+        grid-template-columns: 1fr;
+      }
+
+      .metric-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 50px 0;
+      }
+    }
+
+    @media print {
+      .shell {
+        min-height: auto;
+        color: var(--ink);
+        background: #fff;
+      }
+
+      .nav,
+      .hero-actions,
+      .filterbar,
+      .detail-btn,
+      dialog {
+        display: none !important;
+      }
+
+      .hero,
+      section {
+        width: 100%;
+        padding: 24px 0;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-copy,
+      .eyebrow,
+      .brand span,
+      .metric span {
+        color: #334;
+      }
+
+      .system-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .screen-strip {
+        display: none;
+      }
+
+      body {
+        background: #fff;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="shell" id="top">
+    <div class="topbar">
+      <a class="brand" href="#top" aria-label="Kembali ke atas">
+        <span class="brand-mark"><img src="assets/yulius-puang-profile.jpg" alt="Foto Yulius Puang"></span>
+        <span>
+          <strong>Yulius Puang</strong>
+          <span>Industrial IT | Governance | Digital Operations</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Navigasi utama">
+        <a href="#profile">Profil</a>
+        <a href="#systems">Portofolio</a>
+        <a href="#approach">Approach</a>
+        <a href="#stack">Stack</a>
+        <a href="#certifications">Sertifikasi</a>
+        <button type="button" id="printPage" aria-label="Cetak atau simpan sebagai PDF">Print</button>
+      </nav>
+    </div>
+
+    <div class="hero">
+      <div>
+          <p class="eyebrow">Kumpulan Portofolio</p>
+          <h1>Industrial IT, Governance, dan Digital Operations Portfolio.</h1>
+          <p class="hero-copy">
+          Profil dan portofolio Yulius Puang untuk menunjukkan pengalaman membangun sistem IT governance, service management, monitoring, approval workflow, asset governance, PMO, enterprise applications, dan dashboard operasional untuk lingkungan industri 24/7.
+        </p>
+        <div class="hero-actions">
+          <a class="hero-action primary" href="#systems">Lihat Portofolio</a>
+          <a class="hero-action" href="#closing">Kontak</a>
+        </div>
+      </div>
+
+      <aside class="hero-panel" aria-label="Ringkasan portfolio">
+        <h2>Professional Snapshot</h2>
+        <div class="metric-grid">
+          <div class="metric"><b>12+</b><span>Tahun pengalaman IT, aplikasi, infrastruktur, dan digital operations</span></div>
+          <div class="metric"><b>500+</b><span>Users/devices didukung dalam operasi industri</span></div>
+          <div class="metric"><b>180+</b><span>Critical infrastructure devices dimonitor</span></div>
+          <div class="metric"><b>24/7</b><span>Power plant dan industrial operations support</span></div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section id="profile">
+      <div class="section-head">
+        <div>
+          <h2>Profil Profesional</h2>
+          <p>Industrial IT dan digital operations leader dengan pengalaman lintas power plant, nickel smelter, dan healthcare. Fokus utama: IT governance, ITSM, compliance monitoring, dashboard management, enterprise applications, infrastructure, cybersecurity visibility, dan business process automation.</p>
+        </div>
+      </div>
+      <div class="profile-grid">
+        <article class="profile-card">
+          <h3>Positioning</h3>
+          <p>Siap untuk role IT Governance Leader, IT Service Management Leader, IT Compliance Manager, Digital Governance & Operations Leader, IT Manager, dan Enterprise Applications / Automation Lead pada perusahaan mining, power plant, industrial, dan manufacturing group.</p>
+        </article>
+        <article class="profile-list">
+          <h3>Kekuatan Utama</h3>
+          <ul>
+            <li>IT Governance, ITSM, SOP/WI, runbook, audit trail, CAPA, risk register, dan evidence management.</li>
+            <li>NOC/SOC monitoring, SLA, MTTR, MTBF, asset health, dan executive governance reporting.</li>
+            <li>Internal application development, API integration, dashboard KPI, ERP/SCM workflow, dan PMO control.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="systems">
+      <div class="section-head">
+        <div>
+          <h2>Portofolio Sistem</h2>
+          <p>Kumpulan portofolio sistem yang pernah saya bangun atau konsepkan untuk mendukung governance, monitoring, approval, asset lifecycle, enterprise operations, project control, dan management reporting.</p>
+        </div>
+        <div class="filterbar" role="group" aria-label="Filter sistem">
+          <button class="is-active" type="button" data-filter="all">Semua</button>
+          <button type="button" data-filter="operations">Operations</button>
+          <button type="button" data-filter="it">IT</button>
+          <button type="button" data-filter="governance">Governance</button>
+          <button type="button" data-filter="erp">ERP</button>
+        </div>
+      </div>
+
+      <div class="system-grid" id="systemGrid"></div>
+    </section>
+
+    <div class="band">
+      <section id="approach">
+        <div class="section-head">
+          <div>
+            <h2>Cara Saya Membangun</h2>
+            <p>Setiap sistem diposisikan sebagai alat kerja operasional: alur data jelas, kontrol terdokumentasi, approval bisa ditelusuri, monitoring terlihat, dan laporan dapat dipakai untuk keputusan manajemen.</p>
+          </div>
+        </div>
+        <div class="approach-grid">
+          <div class="approach" style="--accent: var(--green)">
+            <b>Discovery proses</b>
+            <span>Mapping kebutuhan user, role, dokumen, pain point, dan keputusan bisnis yang perlu terlihat.</span>
+          </div>
+          <div class="approach" style="--accent: var(--blue)">
+            <b>Database first</b>
+            <span>Menentukan entity, relasi, status, numbering, audit trail, risk/control, dan data master sebelum layar dibangun.</span>
+          </div>
+          <div class="approach" style="--accent: var(--copper)">
+            <b>Workflow jelas</b>
+            <span>Approval, SLA, backlog, escalation, dan dashboard dibuat supaya pekerjaan bisa ditelusuri.</span>
+          </div>
+          <div class="approach" style="--accent: var(--red)">
+            <b>Readable reporting</b>
+            <span>Ringkasan KPI, SLA, asset health, CAPA, risk, export, filter, dan role-based view untuk management reporting.</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="stack">
+      <div class="section-head">
+        <div>
+          <h2>Stack dan Kapabilitas</h2>
+          <p>Kapabilitas teknis dan governance yang relevan untuk digital operations, enterprise applications, ITSM, monitoring, audit readiness, dan process automation.</p>
+        </div>
+      </div>
+      <div class="stack" aria-label="Daftar stack">
+        <span>IT Governance</span>
+        <span>ITSM</span>
+        <span>CAPA</span>
+        <span>Risk Register</span>
+        <span>Evidence Management</span>
+        <span>Compliance Monitoring</span>
+        <span>Laravel</span>
+        <span>Python</span>
+        <span>Bash</span>
+        <span>Generative AI</span>
+        <span>Strategic Leadership</span>
+        <span>Integrasi API</span>
+        <span>Managing Product Backlog</span>
+        <span>Manajemen Vendor</span>
+        <span>Security Operations Centres</span>
+        <span>Network Operations Center</span>
+        <span>Tailwind CSS</span>
+        <span>MySQL / SQLite</span>
+        <span>Role Based Access</span>
+        <span>Approval Workflow</span>
+        <span>Dashboard KPI</span>
+        <span>Export Reporting</span>
+        <span>Audit Trail</span>
+        <span>Checkmk</span>
+        <span>Wazuh SOC</span>
+        <span>Responsive UI</span>
+      </div>
+    </section>
+
+    <div class="band">
+      <section id="certifications">
+        <div class="section-head">
+          <div>
+            <h2>Certifications &amp; Credential Relevance</h2>
+            <p>Sertifikasi dan pembelajaran yang mendukung IT Service Management, governance, cloud architecture, application development, CI/CD, UI implementation, asset management, dan continuous improvement.</p>
+          </div>
+        </div>
+        <div class="cert-grid">
+          <article class="cert-card">
+            <h3>Certifications</h3>
+            <ul>
+              <li>IT Service Manager - BNSP.</li>
+              <li>Python Project for AI &amp; Application Development - IBM / Coursera.</li>
+              <li>Continuous Integration &amp; Delivery (CI/CD) - IBM / Coursera.</li>
+              <li>Architecting Solutions on AWS - AWS / Coursera.</li>
+              <li>Introduction to CSS3 - Johns Hopkins University / Coursera.</li>
+              <li>Asset Management System / ISO 50001 related course.</li>
+            </ul>
+          </article>
+          <article class="credential-card">
+            <h3>Credential Verification &amp; Role Relevance</h3>
+            <div class="credential-list">
+              <div class="credential-item">
+                <b>Python Project for AI and Application Development | IBM / Coursera</b>
+                <a class="verify-btn" href="https://www.credly.com/badges/c3693fca-5194-42c8-8e11-55704da5ccf7" target="_blank" rel="noopener">Verify</a>
+                <p>Python for AI-enabled applications, unit testing, packaging, and application development foundations.</p>
+              </div>
+              <div class="credential-item">
+                <b>Continuous Integration &amp; Delivery (CI/CD) | IBM / Coursera</b>
+                <a class="verify-btn" href="https://www.credly.com/badges/f25b744a-957b-4c10-9296-b21b27219d2e" target="_blank" rel="noopener">Verify</a>
+                <p>CI/CD pipeline concepts, Tekton, reusable tasks, triggers, container image build, OpenShift Kubernetes, OpenShift Pipelines, and GitOps/ArgoCD.</p>
+              </div>
+              <div class="credential-item">
+                <b>Architecting Solutions on AWS | AWS / Coursera</b>
+                <a class="verify-btn" href="https://www.coursera.org/account/accomplishments/verify/DF2IIW8D3EAU" target="_blank" rel="noopener">Verify</a>
+                <p>AWS solution architecture foundation for cloud-enabled application design, architecture discussion, and technical decision support.</p>
+              </div>
+              <div class="credential-item">
+                <b>Introduction to CSS3 | Johns Hopkins University / Coursera</b>
+                <a class="verify-btn" href="https://www.coursera.org/account/accomplishments/verify/L23JUDFYDIDT" target="_blank" rel="noopener">Verify</a>
+                <p>Front-end styling foundation for web interface quality, layout control, responsive thinking, and UI implementation collaboration.</p>
+              </div>
+              <div class="credential-item">
+                <b>Asset Management System / ISO 50001 related course | Alison</b>
+                <a class="verify-btn" href="https://alison.com/certification/check/6d20a10f20" target="_blank" rel="noopener">Verify</a>
+                <p>Asset and energy management awareness supporting IT asset control, operational accountability, and continuous improvement.</p>
+              </div>
             </div>
-        </section>
+          </article>
+        </div>
+      </section>
+    </div>
 
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
+    <section id="closing">
+      <div class="closing">
+        <div>
+          <h2>Profil dan portofolio untuk Industrial IT, Governance, dan Digital Operations.</h2>
+          <p>Halaman ini merangkum pengalaman, sistem yang dibangun, cara berpikir, fitur utama, dan dampaknya terhadap proses kerja, kontrol operasional, audit readiness, dan pengambilan keputusan manajemen.</p>
+        </div>
+        <div class="contact-box">
+          <span>Profile</span>
+          <b>Yulius Puang</b>
+          <span style="margin-top: 14px;">Email</span>
+          <b>julpuanky@gmail.com</b>
+          <span style="margin-top: 14px;">JobStreet</span>
+          <b><a href="https://id.jobstreet.com/profiles/julius-puang-5lsykJLtHG" target="_blank" rel="noopener">id.jobstreet.com/profiles/julius-puang-5lsykJLtHG</a></b>
+        </div>
+      </div>
+    </section>
+  </main>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+  <dialog id="detailDialog" aria-labelledby="dialogTitle">
+    <div class="modal-head">
+      <div>
+        <h3 id="dialogTitle"></h3>
+        <p id="dialogSummary"></p>
+      </div>
+      <button class="close-btn" type="button" id="closeDialog" aria-label="Tutup detail">X</button>
+    </div>
+    <div class="modal-body">
+      <div>
+        <h4>Fitur dan modul</h4>
+        <ul id="dialogFeatures"></ul>
+        <p class="source-note" id="dialogSource"></p>
+      </div>
+      <aside class="info-panel">
+        <dl>
+          <div>
+            <dt>Peran</dt>
+            <dd id="dialogRole"></dd>
+          </div>
+          <div>
+            <dt>Impact</dt>
+            <dd id="dialogImpact"></dd>
+          </div>
+          <div>
+            <dt>Teknis</dt>
+            <dd id="dialogTech"></dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+  </dialog>
 
-                <a href="index.html" class="navbar-brand mx-auto mx-lg-0"><img src="images/yp.png" class="avatar-image avatar-image-large img-fluid" alt=""></a>
+  <script>
+    const systems = [
+      {
+        id: "asset",
+        title: "Asset Management System",
+        category: "operations",
+        accent: "#1e6b58",
+        scope: "Asset lifecycle",
+        tags: ["Snipe-IT", "Inventory", "Lifecycle"],
+        summary: "Asset governance dan lifecycle management untuk hardware, license, accessory, component, consumable, supplier, location, user, dan audit log.",
+        features: ["Asset checkout/checkin dan acceptance", "Asset model, category, manufacturer, supplier, location, department", "License seat, accessory, component, consumable, predefined kit", "Maintenance, depreciation, custom field, import, report template, API"],
+        role: "Kustomisasi asset lifecycle, ownership control, audit readiness, dan reporting untuk kebutuhan operasional IT",
+        impact: "Membantu kontrol inventaris, asset accountability, histori peminjaman, replacement planning, dan kesiapan data aset.",
+        tech: "Laravel 11, Livewire 3, Passport API, DomPDF, backup, barcode/QR",
+        source: "Source: C:\\xampp\\htdocs\\aset. Model yang terbaca antara lain Asset, AssetMaintenance, License, Accessory, Component, Consumable, Location, Supplier, User."
+      },
+      {
+        id: "gfo",
+        title: "GFO IT Request & Leave Permit",
+        category: "operations",
+        accent: "#b46a3c",
+        scope: "HR operation",
+        tags: ["Izin", "Cuti", "Approval"],
+        summary: "Sistem request dan approval untuk DPK, account access, email account, hardware/software, security permit, izin, cuti, data karyawan, histori, role, dan permission.",
+        features: ["Pengajuan IT request, izin, dan cuti tahunan", "Data karyawan, divisi, atasan user, hari libur, role, dan permission", "History approval untuk kebutuhan pelacakan dan evidence", "Queue/email-ready flow, export Excel, datatable, dan reporting"],
+        role: "Membangun workflow request, approval, master data, evidence, dan laporan operasional",
+        impact: "Membuat proses pengajuan lebih tertib, terdokumentasi, mudah ditelusuri, dan siap dipakai untuk audit trail approval.",
+        tech: "Laravel 11, Spatie Permission, Yajra Datatables, Maatwebsite Excel",
+        source: "Source: C:\\xampp\\htdocs\\GFO. Model yang terbaca antara lain Izin, Cuti, CutiTahunan, DpkRequest, Karyawan, Divisi, AtasanUser, HariLibur."
+      },
+      {
+        id: "itops",
+        title: "IT Governance & Audit",
+        category: "governance",
+        accent: "#286c95",
+        scope: "IT governance",
+        tags: ["Governance", "CAPA", "Audit"],
+        summary: "Portal governance untuk approval request, SOP/WI/runbook, document review, audit finding, CAPA, risk register, integration event, notification, dan evidence management.",
+        features: ["Approval request, approval step, change, incident, dan problem follow-up", "SOP document, work instruction, runbook, document review, dan attachment", "Audit finding, CAPA, audit activity, finding step, dan evidence library", "Integration event, module record, asset relation, system notification, dan compliance matrix"],
+        role: "Mendesain governance workflow, documentation control, audit trail, CAPA, risk register, dan dashboard command-center API",
+        impact: "Menyatukan kontrol operasional IT, dokumen standar, audit finding, evidence, compliance monitoring, dan integrasi dalam satu portal.",
+        tech: "Laravel 12, PHP 8.2, API endpoint untuk command center",
+        source: "Source: C:\\xampp\\htdocs\\itops-portal. Model yang terbaca antara lain ApprovalRequest, SopDocument, WorkInstruction, AuditFinding, IntegrationEvent."
+      },
+      {
+        id: "command",
+        title: "Integrated IT Command Center",
+        category: "it",
+        accent: "#b84a45",
+        scope: "Monitoring",
+        tags: ["Dashboard", "Realtime", "API"],
+        image: "assets/command-center-bg.png",
+        summary: "Dashboard command center yang menggabungkan NOC, SOC visibility, Asset Management, CMDB, PMO, SOP/WI/Runbook, Knowledge Base, dan IT Request Approval.",
+        features: ["API health check untuk koneksi database aset, GFO, ITOPS, dan dashboard governance", "Aset summary, request summary, ITOPS dashboard summary, dan governance indicators", "NOC/SOC visibility, SLA indicator, security alert, asset health, SOP compliance, dan refresh data berkala"],
+        role: "Membangun dashboard, API PHP, mapping datasource, dan management view untuk IT operations dan governance reporting",
+        impact: "Memberi satu layar monitoring lintas sistem untuk visibility, escalation, management reporting, dan keputusan operasional IT.",
+        tech: "HTML, CSS, JavaScript, PHP API, MySQL/MariaDB, XAMPP",
+        source: "Source: C:\\xampp\\htdocs\\it-command-center. Endpoint yang terbaca: health, gfo, itops-dashboard, noc, aset-summary, aset-hardware, aset-licenses, aset-components, aset-accessories."
+      },
+      {
+        id: "noc",
+        title: "Enterprise NOC Dashboard",
+        category: "it",
+        accent: "#128a9c",
+        scope: "NOC monitoring",
+        tags: ["Checkmk", "SLA", "MTTR"],
+        image: "assets/command-center-bg.png",
+        summary: "Dashboard NOC untuk monitoring server, network devices, CCTV/NVR, endpoint, critical devices, availability, uptime trend, incident visibility, dan SLA-oriented reporting.",
+        features: ["Checkmk API / Livestatus integration untuk infrastructure monitoring", "SLA, MTTR, MTBF, uptime, incident, recurring issue, dan service health visibility", "Top issue, critical infrastructure status, network topology, dan device detail view"],
+        role: "Membangun konsep monitoring, data mapping, SLA dashboard, dan management reporting untuk 24/7 industrial IT operations",
+        impact: "Meningkatkan kecepatan visibility insiden, escalation discipline, service reliability, dan reporting ke manajemen.",
+        tech: "Checkmk API/Livestatus, NOC dashboard, PHP/JavaScript, MySQL, SLA reporting",
+        source: "Source: CV dan portfolio evidence. Digunakan untuk monitoring 180+ critical infrastructure devices."
+      },
+      {
+        id: "soc",
+        title: "Wazuh SOC Visibility",
+        category: "it",
+        accent: "#7f4e96",
+        scope: "Security visibility",
+        tags: ["Wazuh", "SOC", "Endpoint"],
+        summary: "Security monitoring foundation untuk endpoint, server, alert review, cybersecurity visibility, dan integrasi ke IT Command Center.",
+        features: ["Endpoint/server visibility dan security event monitoring", "Alert review, security awareness, dan SOC foundation untuk industrial IT", "Integration-ready view untuk command center, executive dashboard, dan operational follow-up"],
+        role: "Implementasi cybersecurity visibility dan dashboard-ready security monitoring untuk lingkungan industrial IT",
+        impact: "Meningkatkan awareness terhadap security event, endpoint/server status, dan kesiapan kontrol cybersecurity.",
+        tech: "Wazuh SOC, endpoint monitoring, server monitoring, alert review, dashboard reporting",
+        source: "Source: CV dan portfolio evidence Wazuh SOC / Executive Dashboard."
+      },
+      {
+        id: "mining",
+        title: "Mining Enterprise ERP",
+        category: "erp",
+        accent: "#59684d",
+        scope: "End-to-end ERP",
+        tags: ["Filament", "ERP", "BI"],
+        summary: "ERP pertambangan berbasis Laravel dan Filament dengan modul production, hauling, weighbridge, fuel, maintenance, stockpile, shipment, HSE, approval, costing, BI, integrasi, dan audit.",
+        features: ["Daily production report, mine plan, mine schedule, drill blast, haul trip", "Fleet unit, fleet dispatch cycle, equipment, maintenance work order, component replacement", "Fuel tank, fuel nozzle, fuel transaction, fuel reconciliation, sensor reading", "HSE incident, inspection, fatigue assessment, JSA/HIRADC, legal register, ESG metric", "Accounting period, GL journal, AFE budget, contractor claim, cost center, inventory movement"],
+        role: "Full-stack implementation, resource modeling, RBAC, reporting, process map",
+        impact: "Menggabungkan proses tambang lintas fungsi dalam satu sistem terstruktur untuk operational control, reporting, governance, dan BI visibility.",
+        tech: "Laravel 12, Filament 4.11, Spatie Permission, Predis, PHP 8.2",
+        source: "Source: C:\\xampp\\htdocs\\mining. Model Mining yang terbaca mencakup produksi, fleet, fuel, HSE, accounting, procurement, inventory, IoT, BI, dan approval."
+      },
+      {
+        id: "backlog",
+        title: "Backlog & Delivery Control",
+        category: "governance",
+        accent: "#d8a528",
+        scope: "Delivery control",
+        tags: ["Sprint", "Ticket", "RBAC"],
+        summary: "Sistem pengelolaan backlog dan delivery control untuk backlog item, module, sprint, PIC assignee, service ticket, audit trail, login history, dan PMO log.",
+        features: ["Backlog item dan backlog module", "Sprint, sprint log, dan PIC assignee", "Service ticket untuk request/issue pendukung", "Audit trail, login history, role, permission, dan role permission"],
+        role: "Mendesain delivery workflow, tracking sprint, permission, dan histori perubahan",
+        impact: "Menjaga request, prioritas, dan status delivery tetap terlihat oleh tim dan stakeholder.",
+        tech: "Laravel 12, PHP 8.2, RBAC, audit trail",
+        source: "Source: C:\\xampp\\htdocs\\backlog. Model yang terbaca antara lain BacklogItem, BacklogModule, Sprint, SprintLog, ServiceTicket, PmoLog, AuditTrail."
+      },
+      {
+        id: "pmo",
+        title: "PMO Governance & Budget Control",
+        category: "governance",
+        accent: "#4e5f86",
+        scope: "Project governance",
+        tags: ["Project", "RAID", "Stage gate"],
+        image: "assets/pmo-dashboard.jpg",
+        summary: "Sistem PMO dan budget control untuk project management, portfolio, program, governance, approval, RAID, EVM, payment transaction, budget monitoring, dan reporting.",
+        features: ["Project, job, task, milestone, WBS, timesheet, stakeholder register", "Risk register, issue, RAID log, dependency register, action item", "Stage gate, project charter, baseline, closure, approval matrix/workflow", "EVM metric, benefit realization, financial forecast, invoice, payment, yearly report"],
+        role: "Menata project governance, reporting, approval, dokumentasi, dan tracking delivery",
+        impact: "Membuat portofolio proyek, risk/issue, milestone, budget, dan governance evidence lebih profesional, terukur, dan mudah dibawa ke steering committee.",
+        tech: "Laravel 8, Bootstrap 3, FullCalendar, Morris.js, PHPUnit",
+        source: "Source: C:\\xampp\\htdocs\\pmo. Entity yang terbaca mencakup Portfolio, Program, Project, RiskRegister, RaidLog, StageGate, EvmMetric, Invoice, Payment."
+      },
+      {
+        id: "simrs",
+        title: "Hospital Information System",
+        category: "operations",
+        accent: "#2f7d68",
+        scope: "SIMRS workflow",
+        tags: ["SIMRS", "Integration", "Reporting"],
+        summary: "Sistem informasi rumah sakit untuk clinical workflow, administrasi, finance, insurance, multi-department reporting, dan integrasi layanan eksternal.",
+        features: ["Workflow klinik, administrasi, finance, insurance, dan reporting", "Integrasi BPJS, INA-CBGs, Bank Sultra, dan Ministry of Health reporting", "Structured data management, operational reporting, dan service documentation"],
+        role: "Led SIMRS implementation, integration, reporting, dan user coordination lintas unit layanan",
+        impact: "Meningkatkan structured data, pelaporan, koordinasi layanan, dan dokumentasi operasional rumah sakit.",
+        tech: "SIMRS, database, reporting, system integration, user support, operational workflow",
+        source: "Source: pengalaman BLUD RS Konawe 2014-2018 dari CV."
+      }
+    ];
 
-                <div class="d-flex align-items-center d-lg-none">
-                    <i class="navbar-icon fa fa-whatsapp"></i>
-                    <a class="custom-btn btn" href="#section_5">
-                        WA : 082271294442
-                    </a>
-                </div>
+    const grid = document.querySelector("#systemGrid");
+    const dialog = document.querySelector("#detailDialog");
+    const dialogTitle = document.querySelector("#dialogTitle");
+    const dialogSummary = document.querySelector("#dialogSummary");
+    const dialogFeatures = document.querySelector("#dialogFeatures");
+    const dialogRole = document.querySelector("#dialogRole");
+    const dialogImpact = document.querySelector("#dialogImpact");
+    const dialogTech = document.querySelector("#dialogTech");
+    const dialogSource = document.querySelector("#dialogSource");
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-lg-5">
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_1">Home</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_2">About</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_3">Sertification</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_4">Portofolio</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_5">Contact</a>
-                        </li>
-                    </ul>
-
-                    <div class="d-lg-flex align-items-center d-none ms-auto">
-                        <i class="navbar-icon bi-telephone-plus me-3"></i>
-                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                        <a class="custom-btn btn" href="#section_5">
-                            WA : 082271294442
-                        </a>
-                    </div>
-                </div>
-
+    function renderCards(filter = "all") {
+      grid.innerHTML = "";
+      systems
+        .filter((system) => filter === "all" || system.category === filter)
+        .forEach((system) => {
+          const card = document.createElement("article");
+          card.className = "system-card";
+          card.style.setProperty("--accent", system.accent);
+          card.innerHTML = `
+            <div class="system-visual ${system.image ? "has-image" : ""}" ${system.image ? `style="--image: url('${system.image}')"` : ""}>
+              <b>${system.scope}</b>
+              <div class="mini-window" aria-hidden="true">
+                <div class="mini-line"></div>
+                <div class="mini-line mid"></div>
+                <div class="mini-line short"></div>
+                <div class="mini-line"></div>
+              </div>
             </div>
-        </nav>
-
-        <main>
-
-            <section class="hero d-flex justify-content-center align-items-center" id="section_1">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-6 col-12">
-                            <div class="hero-text">
-                                <div class="hero-title-wrap d-flex align-items-center mb-4">
-                                    <img src="images/yp1.png" class="avatar-image avatar-image-large img-fluid" alt="">
-
-                                    
-                                </div>
-
-                                <h2 class="mb-4">Grandescunt aucta labore.</h2>
-                               
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-12 position-relative">
-                            <div class="hero-text">
-                                <div class="hero-title-wrap d-flex align-items-center mb-4">
-                                    <img src="images/yp3.jpeg" class="avatar-image avatar-image-large img-fluid" alt="">
-
-                                    <h2 class="hero-title ms-3 mb-0">Tendit in ardua virtus</h2>
-                                    
-                                </div>
-
-                              
-                                
-                            </div>
-                            
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#535da1" fill-opacity="1" d="M0,160L24,160C48,160,96,160,144,138.7C192,117,240,75,288,64C336,53,384,75,432,106.7C480,139,528,181,576,208C624,235,672,245,720,240C768,235,816,213,864,186.7C912,160,960,128,1008,133.3C1056,139,1104,181,1152,202.7C1200,224,1248,224,1296,197.3C1344,171,1392,117,1416,90.7L1440,64L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path></svg>
-            </section>
-
-
-            <section class="about section-padding" id="section_2">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-6 col-12">
-                            <img src="images/yp.png" class="about-image img-fluid" alt="">
-                        </div>
-
-                        <div class="col-lg-6 col-12 mt-5 mt-lg-0">
-                            <div class="about-thumb">
-
-                                <div class="section-title-wrap d-flex justify-content-end align-items-center mb-4">
-                                    <h2 class="text-white me-4 mb-0">About Me</h2>
-
-                                    <img src="images/yp1.png" class="avatar-image img-fluid" alt="">
-                                </div>
-
-                                <h3 class="pt-2 mb-3">a little bit about Me</h3>
-
-                                <p align="justify">  IT Infrastructure Operations and Development Professional with 10+ years of experience in power plant and industrial environments. Proven track record in ensuring 24/7 system availability, managing IT infrastructure, and supporting critical operations.Experienced in leading infrastructure monitoring initiatives, coordinating IT teams and vendors, and improving system reliability through automation and proactive incident management. Strong expertise in IT Service Management (ITSM), SLA management, and industrial IT systems.                          </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <section class="featured section-padding">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-6 col-12">
-                            <div class="profile-thumb">
-                                <div class="profile-title">
-                                    <h4 class="mb-0">Personal Data Information</h4>
-                                </div>
-
-                                <div class="profile-body">
-                                    <p>
-                                        <span class="profile-small-title">Name</span> 
-                                        <span>Yulius Puang</span>
-                                    </p>
-
-                                    <p>
-                                        <span class="profile-small-title">Birthday</span> 
-                                        <span> Makassar - Aug 23, 1985</span>
-                                    </p>
-
-                                    <p>
-                                        <span class="profile-small-title">Religion</span> 
-                                         <span><a href="#" target="_blank">Chatolic</a></span>
-                                    </p>
-                                    <p>
-                                        <span class="profile-small-title">Gender</span> 
-                                        <span><a href="#">Male.</a></span>
-                                    </p>
-
-                                    <p>
-                                        <span class="profile-small-title">Marital Status</span> 
-                                        <span><a href="#">Married</a></span>
-                                    </p>
-                                    
-                                   
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-12">
-                            <div class="profile-thumb">
-                                <div class="profile-title">
-                                    <h4 class="mb-0">Contact Information</h4>
-                                </div>
-
-                                <div class="profile-body">
-
-                                    <p>
-                                        <span class="profile-small-title">WhatsApp</span> 
-                                         <span><a href="https://wa.me/6282271294442" target="_blank">082271294442</a></span>
-                                    </p>
-
-                                    <p>
-                                        <span class="profile-small-title">Email</span> 
-                                        <span><a href="mailto:julpuanky@gmail.com">julpuanky@gmail.com</a></span>
-                                    </p>
-                                    <p>
-                                        <span class="profile-small-title">Linkedin </span> 
-                                        <span><a href="https://www.linkedin.com/in/j-puang-b14a5158/">https://www.linkedin.com/in/j-puang-b14a5158/</span>
-                                    </p>
-                                    <p>
-                                        <span class="profile-small-title">Profile Web</span> 
-                                        <span><a href="https://jpuang.github.io"> https://jpuang.github.oi </span>
-                                    </p>
-                                    <p>
-                                        <span class="profile-small-title">Address</span> 
-                                        <span><a href="#">JL.KS.Tubun - BTN Bukit Baruga Perdana D/5 , Baruga.</a></span>
-                                    </p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="clients section-padding">
-                <div class="container">
-                    <div class="row align-items-center">
-
-                        <div class="col-lg-12 col-12">
-                            <h3 class="text-center mb-5">Companies I've had worked</h3>
-                        </div>
-
-                        <div class="col-lg-2 col-4 ms-auto clients-item-height">
-                            <img src="images/dssp1.png" class="clients-image img-fluid" alt="">
-                        </div>
-
-                        <div class="col-lg-2 col-4 clients-item-height">
-                            <img src="images/vdni.png" class="clients-image img-fluid" alt="">
-                        </div>
-
-                        <div class="col-lg-2 col-4 clients-item-height">
-                            <img src="images/blud.jfif" class="clients-image img-fluid" alt="">
-                        </div>
-
-                        <div class="col-lg-2 col-4 clients-item-height">
-                            <img src="images/kftd.jfif" class="clients-image img-fluid" alt="">
-                        </div>
-
-                        <div class="col-lg-2 col-4 me-auto clients-item-height">
-                            <img src="images/wings.png" class="clients-image img-fluid" alt="">
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="services section-padding" id="section_3">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-10 col-12 mx-auto">
-                            <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
-                                <img src="images/cert.png" class="avatar-image img-fluid" alt="">
-
-                                <h2 class="text-white ms-4 mb-0">Certification - Course</h2>
-                            </div>
-
-                            <div class="row pt-lg-5">
-                                <div class="col-lg-6 col-12">
-                                    <div class="services-thumb">
-                                        <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                                            <h3 class="mb-0">ITSM Manager</h3>
-
-                                            <div class="services-price-wrap ms-auto">
-                                                <p class="services-price-text mb-0">Certified</p>
-                                                <div class="services-price-overlay"></div>
-                                            </div>
-                                        </div>
-
-                                        <p>Information Technology Service Management - ITIL Best Practice.</p>
-
-                                        <a href="https://bnsp.go.id/" class="custom-btn custom-border-btn btn mt-3">Discover More</a>
-
-                                        <div class="services-icon-wrap d-flex justify-content-center align-items-center">
-                                            </i><img src="images/bnsp.png" class="clients-image img-fluid" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-12">
-                                    <div class="services-thumb services-thumb-up">
-                                        <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                                            <h3 class="mb-0">IT Service Management</h3>
-
-                                            <div class="services-price-wrap ms-auto">
-                                                <p class="services-price-text mb-0">Courses</p>
-                                                <div class="services-price-overlay"></div>
-                                            </div>
-                                        </div>
-
-                                        <p>Information Technology Service Management - Service Value System ITIL4 Best Practice..</p>
-
-                                        <a href="https://www.inixindo.id/" class="custom-btn custom-border-btn btn mt-3">Discover More</a>
-
-                                        <div class="services-icon-wrap d-flex justify-content-center align-items-center">
-                                            </i><img src="images/inix.png" class="clients-image img-fluid" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-12">
-                                    <div class="services-thumb">
-                                        <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                                            <h3 class="mb-0">NGFW PALO ALTO Firewall</h3>
-
-                                            <div class="services-price-wrap ms-auto">
-                                                <p class="services-price-text mb-0">Training Workshop</p>
-                                                <div class="services-price-overlay"></div>
-                                            </div>
-                                        </div>
-
-                                        <p>Next Generation Firewall  with PALO ALTO.</p>
-
-                                        <a href="https://jukesolutions.com/" class="custom-btn custom-border-btn btn mt-3">Discover More</a>
-
-                                        <div class="services-icon-wrap d-flex justify-content-center align-items-center">
-                                            </i><img src="images/juke.jfif" class="clients-image img-fluid" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-12">
-                                    <div class="services-thumb">
-                                        <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                                            <h3 class="mb-0">Webbased Application Development</h3>
-
-                                            <div class="services-price-wrap ms-auto">
-                                                <p class="services-price-text mb-0">Courses</p>
-                                                <div class="services-price-overlay"></div>
-                                            </div>
-                                        </div>
-
-                                        <p>Develope application using framework webbased.</p>
-
-                                        <a href="https://www.kemnaker.go.id/" class="custom-btn custom-border-btn btn mt-3">Discover More</a>
-
-                                        <div class="services-icon-wrap d-flex justify-content-center align-items-center">
-                                            </i><img src="images/kemenaker.png" class="clients-image img-fluid" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-12">
-                                    <div class="services-thumb services-thumb-up">
-                                        <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                                            <h3 class="mb-0">Information Security</h3>
-
-                                            <div class="services-price-wrap ms-auto">
-                                                <p class="services-price-text mb-0">Courses</p>
-                                                <div class="services-price-overlay"></div>
-                                            </div>
-                                        </div>
-
-                                        <p>Protecting Information in the digital Age.</p>
-
-                                        <a href="https://www.indonesiax.co.id/" class="custom-btn custom-border-btn btn mt-3">Discover More</a>
-
-                                        <div class="services-icon-wrap d-flex justify-content-center align-items-center">
-                                            </i><img src="images/inax.jfif" class="clients-image img-fluid" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-12">
-                                    <div class="services-thumb services-thumb-up">
-                                        <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                                            <h3 class="mb-0">Developer with GitHub</h3>
-
-                                            <div class="services-price-wrap ms-auto">
-                                                <p class="services-price-text mb-0">Courses</p>
-                                                <div class="services-price-overlay"></div>
-                                            </div>
-                                        </div>
-
-                                        <p>Working as a website developer with github.</p>
-
-                                        <a href="https://www.sekolahpintar.com/" class="custom-btn custom-border-btn btn mt-3">Discover More</a>
-
-                                        <div class="services-icon-wrap d-flex justify-content-center align-items-center">
-                                            </i><img src="images/sekolahpintar.png" class="clients-image img-fluid" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="projects section-padding" id="section_4">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-8 col-md-8 col-12 ms-auto">
-                            <div class="section-title-wrap d-flex justify-content-center align-items-center mb-4">
-                                <img src="images/porto.png" class="avatar-image img-fluid" alt="">
-
-                                <h2 class="text-white ms-4 mb-0">Portofolio</h2>
-                            </div>
-                        </div>
-
-                        <div class="clearfix"></div>
-
-                        <div class="col-lg-2 col-md-6 col-12">
-                            <div class="projects-thumb">
-                                <div class="projects-info">
-                                    <small class="projects-tag">Web Based ( Codeigniter,HTML,Javascript,MySQL)</small>
-
-                                    <h3 class="projects-title">HR System</h3>
-                                </div>
-
-                                <a href="images/B.jpeg" class="popup-image">
-                                    <img src="images/B.jpeg" class="projects-image img-fluid" alt="">
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-2 col-md-6 col-12">
-                            <div class="projects-thumb">
-                                <div class="projects-info">
-                                    <small class="projects-tag">Web Based ( Codeigniter,HTML,Javascript,MySQL)</small>
-
-                                    <h3 class="projects-title">HRGAIT HelpDesk</h3>
-                                </div>
-
-                                <a href="images/C.jpeg" class="popup-image">
-                                    <img src="images/C.jpeg" class="projects-image img-fluid" alt="">
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-2 col-md-6 col-12">
-                            <div class="projects-thumb">
-                                <div class="projects-info">
-                                    <small class="projects-tag">Web Based ( Laravel,MySQL)</small>
-
-                                    <h3 class="projects-title">Leave Application</h3>
-                                </div>
-
-                                <a href="images/A.jpeg" class="popup-image">
-                                    <img src="images/A.jpeg" class="projects-image img-fluid" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-6 col-12">
-                            <div class="projects-thumb">
-                                <div class="projects-info">
-                                    <small class="projects-tag">Web based ( Laravel,JQuery,Bootstrap,MySQL)</small>
-
-                                    <h3 class="projects-title">Assets System </h3>
-                                </div>
-
-                                <a href="images/D.jpeg" class="popup-image">
-                                    <img src="images/E.jpeg" class="projects-image img-fluid" alt="">
-                                </a>
-                            </div>
-                        </div>
-                         <div class="col-lg-2 col-md-6 col-12">
-                            <div class="projects-thumb">
-                                <div class="projects-info">
-                                    <small class="projects-tag">Web based ( Laravel ,MySQL)</small>
-
-                                    <h3 class="projects-title">Project Manajement </h3>
-                                </div>
-
-                                <a href="images/D.jpeg" class="popup-image">
-                                    <img src="images/noc.png" class="projects-image img-fluid" alt="">
-                                </a>
-                            </div>
-                        </div>
-                         <div class="col-lg-2 col-md-6 col-12">
-                            <div class="projects-thumb">
-                                <div class="projects-info">
-                                    <small class="projects-tag">Web based (Phython,React.js)</small>
-
-                                    <h3 class="projects-title">Network Monitor </h3>
-                                </div>
-
-                                <a href="images/D.jpeg" class="popup-image">
-                                    <img src="images/F.jpeg" class="projects-image img-fluid" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="contact section-padding" id="section_5">
-                    <div class="container">
-                        <div class="row">
-
-                            <div class="col-lg-6 col-md-8 col-12">
-                                <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
-                                    <img src="images/yp5.jpeg" class="avatar-image img-fluid" alt="">
-
-                                    <h2 class="text-white ms-4 mb-0">Hire Me</h2>
-                                </div>
-                            </div>
-
-                            <div class="clearfix"></div>
-
-                            <div class="col-lg-3 col-md-6 col-12 pe-lg-0">
-                                <div class="contact-info contact-info-border-start d-flex flex-column">
-                                    <strong class="site-footer-title d-block mb-3">Profile Web</strong>
-
-                                    <ul class="footer-menu">
-                                        <li class="footer-menu-item"><a href="https://jpuang.github.io" class="footer-menu-link">Websites</a></li>
-                                    </ul>
-
-                                    <strong class="site-footer-title d-block mt-4 mb-3">Social Media</strong>
-
-                                    <ul class="social-icon">
-                                        <li class="social-icon-item"><a href="https://www.linkedin.com/in/j-puang-b14a5158/" class="social-icon-link bi-linkedin"></a></li>
-
-                                        
-                                    </ul>
-
-                                    
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-6 col-12 ps-lg-0">
-                                <div class="contact-info d-flex flex-column">
-                                    
-
-                                    <strong class="site-footer-title d-block mt-4 mb-3">Email</strong>
-
-                                    <p>
-                                        <a href="mailto:julpuanky@gmail.com">
-                                            julpuanky@gmail.com
-                                        </a>
-                                    </p>
-
-                                    <strong class="site-footer-title d-block mt-4 mb-3">WhatsApp</strong>
-
-                                    <p class="mb-0">
-                                        <a href="https://wa.me/6282271294442">
-                                            082271294442
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-
-                          
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        </main>
-
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-12 col-12">
-                        <div class="copyright-text-wrap">
-                            <p class="mb-0">
-                                <span class="copyright-text">Copyright ©<a href="#"> Yulius Puang</a>.All rights reserved.</span>
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="system-body">
+              <div class="tag-row">${system.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}</div>
+              <h3>${system.title}</h3>
+              <p>${system.summary}</p>
+              <ul class="feature-list">
+                ${system.features.slice(0, 3).map((feature) => `<li>${feature}</li>`).join("")}
+              </ul>
+              <div class="card-footer">
+                <span class="scope">${system.category}</span>
+                <button class="detail-btn" type="button" data-id="${system.id}">Detail</button>
+              </div>
             </div>
-        </footer>
+          `;
+          grid.appendChild(card);
+        });
+    }
 
-        <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.sticky.js"></script>
-        <script src="js/click-scroll.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/magnific-popup-options.js"></script>
-        <script src="js/custom.js"></script>
+    function openDetail(id) {
+      const system = systems.find((item) => item.id === id);
+      if (!system) return;
 
-    </body>
+      dialogTitle.textContent = system.title;
+      dialogSummary.textContent = system.summary;
+      dialogFeatures.innerHTML = system.features.map((feature) => `<li>${feature}</li>`).join("");
+      dialogRole.textContent = system.role;
+      dialogImpact.textContent = system.impact;
+      dialogTech.textContent = system.tech;
+      dialogSource.textContent = system.source;
+
+      if (typeof dialog.showModal === "function") {
+        dialog.showModal();
+      }
+    }
+
+    renderCards();
+
+    document.querySelectorAll("[data-filter]").forEach((button) => {
+      button.addEventListener("click", () => {
+        document.querySelectorAll("[data-filter]").forEach((item) => item.classList.remove("is-active"));
+        button.classList.add("is-active");
+        renderCards(button.dataset.filter);
+      });
+    });
+
+    grid.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-id]");
+      if (button) openDetail(button.dataset.id);
+    });
+
+    document.querySelector("#closeDialog").addEventListener("click", () => dialog.close());
+    document.querySelector("#printPage").addEventListener("click", () => window.print());
+  </script>
+</body>
 </html>
