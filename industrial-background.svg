@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#071522"/>
+    <stop offset=".55" stop-color="#0b2232"/>
+    <stop offset="1" stop-color="#06111b"/>
+  </linearGradient>
+  <radialGradient id="glow" cx="75%" cy="25%" r="50%">
+    <stop offset="0" stop-color="#16b8b5" stop-opacity=".18"/>
+    <stop offset=".55" stop-color="#149eb6" stop-opacity=".06"/>
+    <stop offset="1" stop-color="#000" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#0a1b29"/>
+    <stop offset="1" stop-color="#040b12"/>
+  </linearGradient>
+  <filter id="blur"><feGaussianBlur stdDeviation="10"/></filter>
+  <filter id="blur2"><feGaussianBlur stdDeviation="22"/></filter>
+</defs>
+
+<rect width="1920" height="1080" fill="url(#sky)"/>
+<rect width="1920" height="1080" fill="url(#glow)"/>
+
+<!-- distant haze -->
+<ellipse cx="1450" cy="225" rx="350" ry="130" fill="#3fd7c3" opacity=".045" filter="url(#blur2)"/>
+<ellipse cx="450" cy="300" rx="300" ry="110" fill="#53c5ff" opacity=".035" filter="url(#blur2)"/>
+
+<!-- horizon -->
+<path d="M0 690 C250 655,430 710,660 680 C900 648,1080 690,1270 665 C1470 640,1650 690,1920 650 L1920 1080 L0 1080 Z" fill="url(#ground)"/>
+
+<!-- industrial complex, left -->
+<g fill="#102b3a" stroke="#1a4252" stroke-width="2" opacity=".88">
+  <rect x="45" y="630" width="310" height="150" rx="4"/>
+  <rect x="80" y="585" width="90" height="45"/>
+  <rect x="205" y="550" width="110" height="80"/>
+  <rect x="330" y="590" width="135" height="190"/>
+  <rect x="410" y="485" width="34" height="295"/>
+  <rect x="465" y="540" width="190" height="240"/>
+  <rect x="535" y="450" width="38" height="330"/>
+  <rect x="630" y="610" width="115" height="170"/>
+</g>
+
+<!-- industrial complex, right -->
+<g fill="#0f2b39" stroke="#1a4351" stroke-width="2" opacity=".9">
+  <rect x="1120" y="595" width="230" height="185"/>
+  <rect x="1185" y="520" width="100" height="75"/>
+  <rect x="1355" y="555" width="180" height="225"/>
+  <rect x="1495" y="430" width="40" height="350"/>
+  <rect x="1550" y="590" width="150" height="190"/>
+  <rect x="1670" y="490" width="40" height="290"/>
+  <rect x="1720" y="620" width="160" height="160"/>
+</g>
+
+<!-- stacks with subtle smoke -->
+<g fill="#183a49" opacity=".85">
+  <rect x="415" y="380" width="24" height="105"/>
+  <rect x="540" y="350" width="26" height="100"/>
+  <rect x="1502" y="320" width="25" height="110"/>
+  <rect x="1677" y="370" width="25" height="120"/>
+</g>
+<g fill="#7ac8c6" opacity=".045" filter="url(#blur)">
+  <ellipse cx="427" cy="345" rx="60" ry="18"/>
+  <ellipse cx="553" cy="315" rx="72" ry="22"/>
+  <ellipse cx="1515" cy="284" rx="82" ry="24"/>
+  <ellipse cx="1690" cy="335" rx="68" ry="20"/>
+</g>
+
+<!-- pipe bridges -->
+<g stroke="#2b5e68" stroke-width="8" fill="none" opacity=".75">
+  <path d="M300 640 H560 V600 H840"/>
+  <path d="M1060 635 H1400 V605 H1745"/>
+</g>
+<g stroke="#337481" stroke-width="2" fill="none" opacity=".55">
+  <path d="M300 624 H560 V584 H840"/>
+  <path d="M1060 619 H1400 V589 H1745"/>
+</g>
+
+<!-- power line towers -->
+<g stroke="#2b5662" stroke-width="4" fill="none" opacity=".7">
+  <path d="M860 610 L900 415 L940 610 M875 530 H925 M882 490 H918 M890 450 H910"/>
+  <path d="M975 625 L1015 445 L1055 625 M990 545 H1040 M997 505 H1033 M1005 465 H1025"/>
+</g>
+<g stroke="#315f6d" stroke-width="2" opacity=".45">
+  <path d="M810 465 C900 450,930 470,1015 475 C1100 480,1130 460,1210 468"/>
+  <path d="M805 490 C900 475,935 495,1015 500 C1100 505,1140 485,1220 492"/>
+</g>
+
+<!-- plant lights -->
+<g fill="#55e0c1" opacity=".35">
+  <circle cx="105" cy="650" r="4"/><circle cx="245" cy="600" r="4"/><circle cx="350" cy="620" r="4"/>
+  <circle cx="505" cy="575" r="4"/><circle cx="665" cy="640" r="4"/>
+  <circle cx="1165" cy="625" r="4"/><circle cx="1290" cy="555" r="4"/><circle cx="1410" cy="600" r="4"/>
+  <circle cx="1580" cy="620" r="4"/><circle cx="1770" cy="655" r="4"/>
+</g>
+
+<!-- foreground dark -->
+<path d="M0 805 C280 775,520 830,760 798 C1040 760,1260 822,1490 792 C1680 768,1800 790,1920 775 L1920 1080 L0 1080 Z" fill="#03090f" opacity=".76"/>
+
+<!-- vignette -->
+<rect width="1920" height="1080" fill="none" stroke="#000" stroke-width="160" opacity=".18"/>
+</svg>
